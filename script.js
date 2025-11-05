@@ -182,15 +182,15 @@ for (let i = 0; i < indexIndicator.length; i++) {
     }
     this.classList.add("active");
     index = i + 1;
-    // if index is 0 | index should be 1
-    // if index is 1 | index should be 2
-    // if index is 2 | index should be 3
-    // if index is 3 | index should be 4
-    // if index is 4 | index should be 5
-    // if index is 5 | index should be 6
-    // if index is 6 | index should be 7
+    // if i is 0 | index should be 1
+    // if i is 1 | index should be 2
+    // if i is 2 | index should be 3
+    // if i is 3 | index should be 4
+    // if i is 4 | index should be 5
+    // if i is 5 | index should be 6
+    // if i is 6 | index should be 7
     // index is (0, 1, 2, 3, 4, 5, 6, 7, 8) index's length is 9
-    // index of indicator is (0, 1, 2, 3, 4, 5, 6) index of indicator's length is 7
+    // i is (0, 1, 2, 3, 4, 5, 6) i's length is 7
     slider.style.transition = "";
     updateSlide();
     console.log("this is i:", i, "this is index:", index);
