@@ -5,26 +5,47 @@ const backBtn = document.getElementById("back");
 const indexIndicator = document.getElementsByClassName("index");
 /* Declaration to prevent double triggering while the transition is running */
 let isTransitioning = false;
+// image indicator-container
+const indexContainer = document.getElementById("indexContainer");
 
+// adding remove blur & black film effect
 nextBtn.addEventListener("mouseenter", () => {
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.add("btn-hover-state");
   }
 });
 
+// removing blur & black film effect remover
 nextBtn.addEventListener("mouseleave", () => {
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("btn-hover-state");
   }
 });
 
+// adding remove blur & black film effect
 backBtn.addEventListener("mouseenter", () => {
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.add("btn-hover-state");
   }
 });
 
+// removing blur & black film effect remover
+
 backBtn.addEventListener("mouseleave", () => {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("btn-hover-state");
+  }
+});
+
+// adding remove blur & black film effect
+indexContainer.addEventListener("mouseenter", () => {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.add("btn-hover-state");
+  }
+});
+
+// removing blur & black film effect remover
+indexContainer.addEventListener("mouseleave", () => {
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("btn-hover-state");
   }
@@ -184,3 +205,5 @@ function indicatorOnLoad() {
   }
   indexIndicator[0].classList.add("active");
 }
+
+console.log(indexContainer);
